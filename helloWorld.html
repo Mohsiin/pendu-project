@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pendu App</title>
+    <script src="js/angular.min.js"></script>
+    <script src="js/ui-bootstrap-tpls-0.6.0.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <div ng-controller="myCtrl" class="container">
+        <h1>Jeu de pendu</h1>
+        <form name="form1" ng-submit="verif();">
+            <table  border="1">
+                <tr>
+                    <td rowspan="4">
+                        Mot recherché:<br>
+                        <input type="text" ng-model="mot" name="mot" readonly>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Lettres testées
+                        <input type="text" ng-model="tester" name="tester" size="50" readonly>
+                    </td>
+                </tr>
+            </table>
+            <span>
+        Entrer la lettre ou le mot que vous voulez essayer: <input type="text" ng-model="lettre" name="lettre" onclick="lettre=''">
+        <br>
+        <input type="submit" value="valider"></span><br>
+        <span>Vous avez {{essai}} sur {{total}} essaie(s) </span>
+        </form>
+    </div>
+</body>
+
+</html>

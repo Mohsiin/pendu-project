@@ -11,7 +11,7 @@ Principe du jeu est :
 
 ## Getting Started
 
-Pour avoir le projet sur votre local, il suffit de faire un git clone de 
+Pour avoir le projet sur votre local, il suffit de faire un git clone de https://github.com/Mohsiin/pendu-project.git ou de le télécharger
 
 Après, il faut ouvrir la page html helloWorld.html dans votre navigateur
 
